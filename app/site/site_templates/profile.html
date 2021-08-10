@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+
+<header>
+  <h3 class="header-text">Welcome to xxxxxx! test@gmail.com</h3>
+</header>
+
+<div class="container">
+  <h3>Here are your profile details</h3>
+  <ul class="list-group">
+    <li class="list-group-item">Email: {{ current_user.email }}</li>
+    <li class="list-group-item">Token: {{ current_user.token }}</li>
+  </ul>
+</div>
+
+{% endblock content %}
